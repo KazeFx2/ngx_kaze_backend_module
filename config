@@ -1,0 +1,8 @@
+# vim: set ft=sh et:
+ngx_addon_name=ngx_http_kaze_backend
+
+ngx_module_type=HTTP
+ngx_module_name="$ngx_addon_name"
+ngx_module_srcs="$ngx_addon_dir/*.c  $ngx_addon_dir/../sql/*.c"
+
+. auto/module
